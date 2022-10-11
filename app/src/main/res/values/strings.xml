@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Testtricount</string>
+    <string name="valider">Valider</string>
+    <string name="titre">Titre</string>
+    <string name="description">Description</string>
+    <string name="votre_nom">Votre nom</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="participants_0_50">Participants (0/50)</string>
+    <string name="tricount">Tricount</string>
+    <string name="desciption">Desciption</string>
+
+    <string-array name="spinnerDevise">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>CNY</item>
+    </string-array>
+</resources>

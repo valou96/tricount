@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleApp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#08C5D1"
+        android:gravity="center"
+        android:text="@string/tricount"
+        android:textColor="#004D40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTricount"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Titre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleApp" />
+
+    <EditText
+        android:id="@+id/editTitleName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/titre"
+        app:layout_constraintEnd_toEndOf="@+id/titleTricount"
+        app:layout_constraintStart_toStartOf="@+id/titleTricount"
+        app:layout_constraintTop_toBottomOf="@+id/titleTricount"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/titleDescription"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/desciption"
+        app:layout_constraintEnd_toEndOf="@+id/editTitleName"
+        app:layout_constraintStart_toStartOf="@+id/editTitleName"
+        app:layout_constraintTop_toBottomOf="@+id/editTitleName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/description"
+        app:layout_constraintEnd_toEndOf="@+id/titleDescription"
+        app:layout_constraintStart_toStartOf="@+id/titleDescription"
+        app:layout_constraintTop_toBottomOf="@+id/titleDescription" />
+
+    <Spinner
+        android:id="@+id/spinnerDevise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDevise"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDevise"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDevise" />
+
+    <TextView
+        android:id="@+id/Participants"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/participants_0_50"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCategorie" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/votre_nom"
+        app:layout_constraintEnd_toEndOf="@+id/Participants"
+        app:layout_constraintStart_toStartOf="@+id/Participants"
+        app:layout_constraintTop_toBottomOf="@+id/Participants"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/AddParticipant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
+
+    <Button
+        android:id="@+id/ValidateTricount"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCategorie"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/AddParticipant" />
+</androidx.constraintlayout.widget.ConstraintLayout>
