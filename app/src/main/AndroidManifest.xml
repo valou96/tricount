@@ -14,6 +14,20 @@
         android:theme="@style/Theme.Testtricount"
         tools:targetApi="31">
         <activity
+            android:name=".NewDepense"
+            android:exported="false" />
+        <activity
+            android:name=".NewTricount"
+            android:exported="false"
+            android:label="@string/title_activity_new_tricount"
+            android:theme="@style/Theme.Testtricount.NoActionBar" />
+        <activity
+            android:name=".Tricount"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_new_tricount"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
