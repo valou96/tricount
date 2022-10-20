@@ -1,4 +1,4 @@
-package com.example.testtricount.Models;
+package com.example.testtricount;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -21,12 +21,7 @@
             android:exported="false"
             android:label="@string/title_activity_new_tricount"
             android:theme="@style/Theme.Testtricount.NoActionBar" />
-        <activity
-            android:name=".Tricount"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_new_tricount"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
